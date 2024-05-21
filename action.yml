@@ -10,8 +10,12 @@ inputs:
   release_type:
     description: RTK release type, options are 'major', 'minor', 'patch'
     type: string
-    required: true
+    required: false
     default: 'minor'
+  github_token:
+    description: GitHub token
+    type: string
+    required: true
 runs:
   using: 'composite'
   steps:
