@@ -1,0 +1,39 @@
+---
+name: 'Studio Release GitHub Action'
+description: |
+  GitHub Action for creating a repository release using RTK.
+author: 'Cliffano Subagio'
+branding:
+  icon: 'bookmark'
+  color: 'black'
+inputs:
+  release_type:
+    description: RTK release type, options are 'major', 'minor', 'patch'
+    type: string
+    required: true
+    default: 'minor'
+runs:
+  using: 'composite'
+  steps:
+    - name: Checkout code from the current repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
+    - name: Setup node.js, needed to run RTK
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+    - name: Set @pakkunbot's email as git user email
+      run: git config --global user.email "blah+pakkun@cliffano.com"
+    - name: Set @pakkunbot's username as git user name
+      run: git config --global user.name "pakkunbot"
+    - name: Install RTK
+      run: npm install -g rtk
+    - name: Cut off a release
+      run: make release-${{ inputs.release_type }}
+    - name: Push the changes to remote repository
+      uses: ad-m/github-push-action@v0.8.0
+      with:
+        tags: true
+        github_token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
