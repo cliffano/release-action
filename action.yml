@@ -18,7 +18,7 @@ runs:
     - name: Checkout code from the current repository
       uses: actions/checkout@v4
       with:
-        token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
+        token: ${{ inputs.github_token }}
     - name: Setup node.js, needed to run RTK
       uses: actions/setup-node@v4
       with:
@@ -39,5 +39,5 @@ runs:
       uses: ad-m/github-push-action@v0.8.0
       with:
         tags: true
-        github_token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
+        github_token: ${{ inputs.github_token }}
         branch: ${{ github.ref }}

@@ -7,4 +7,5 @@ jobs:
     steps:
       - uses: cliffano/studio-release-action@main
         with:
-          type: 'minor'
+          release_type: 'minor'
+          github_token: ${{ secrets.STUDIO_GITHUB_TOKEN }}

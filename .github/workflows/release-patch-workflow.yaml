@@ -7,4 +7,5 @@ jobs:
     steps:
       - uses: cliffano/studio-release-action@main
         with:
-          type: 'patch'
+          release_type: 'patch'
+          github_token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
