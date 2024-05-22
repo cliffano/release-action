@@ -38,7 +38,7 @@ runs:
       run: npm install -g rtk
     - name: Cut off a release
       shell: bash
-      run: make release-${{ inputs.release_type }}
+      run: rtk release --release-increment-type ${{ inputs.release_type }}
     - name: Push the changes to remote repository
       uses: ad-m/github-push-action@v0.8.0
       with:
