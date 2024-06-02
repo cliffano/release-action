@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Changed
+- Rename studio-release-action to release-action
+
 ## 1.0.0 - 2024-05-22
 ### Changed
 - Replace Makefile with direct rtk call to support cross-platform repos

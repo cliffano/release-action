@@ -1,6 +1,6 @@
-<img align="right" src="https://raw.github.com/cliffano/studio-release-action/master/avatar.jpg" alt="Avatar"/>
+<img align="right" src="https://raw.github.com/cliffano/release-action/master/avatar.jpg" alt="Avatar"/>
 
-[![Build Status](https://github.com/cliffano/studio-release-action/workflows/CI/badge.svg)](https://github.com/cliffano/studio-release-action/actions?query=workflow%3ACI)
+[![Build Status](https://github.com/cliffano/release-action/workflows/CI/badge.svg)](https://github.com/cliffano/release-action/actions?query=workflow%3ACI)
 <br/>
 
 Studio Release GitHub Action
@@ -16,6 +16,6 @@ Create a major release:
     jobs:
       build:
         steps:
-          - uses: cliffano/studio-release-action@latest
+          - uses: cliffano/release-action@latest
             with:
               type: 'major'
