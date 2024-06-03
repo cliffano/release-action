@@ -3,8 +3,8 @@
 [![Build Status](https://github.com/cliffano/release-action/workflows/CI/badge.svg)](https://github.com/cliffano/release-action/actions?query=workflow%3ACI)
 <br/>
 
-Studio Release GitHub Action
-----------------------------
+Release GitHub Action
+---------------------
 
 GitHub Action for creating a repository release using RTK.
 
