@@ -6,7 +6,7 @@
 Release GitHub Action
 ---------------------
 
-GitHub Action for creating a repository release using RTK.
+GitHub Action for creating a repository release using [RTK](https://github.com/cliffano/rtk).
 
 Usage
 -----
@@ -19,3 +19,5 @@ Create a major release:
           - uses: cliffano/release-action@latest
             with:
               type: 'major'
+
+The type value can be one of `major`, `minor`, or `patch`.
