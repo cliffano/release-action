@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+- Add git_user_name and git_user_email input parameters
+
 ### Changed
 - Rename studio-release-action to release-action
 

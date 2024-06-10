@@ -16,6 +16,16 @@ inputs:
     description: GitHub token
     type: string
     required: true
+  git_user_name:
+    description: Git user name
+    type: string
+    required: false
+    default: pakkunbot
+  git_user_email:
+    description: Git user email
+    type: string
+    required: false
+    default: blah+pakkun@cliffano.com
 runs:
   using: 'composite'
   steps:
@@ -29,10 +39,10 @@ runs:
         node-version: '18'
     - name: Set @pakkunbot's email as git user email
       shell: bash
-      run: git config --global user.email "blah+pakkun@cliffano.com"
+      run: git config --global user.email "${{ inputs.git_user_email }}"
     - name: Set @pakkunbot's username as git user name
       shell: bash
-      run: git config --global user.name "pakkunbot"
+      run: git config --global user.name "${{ inputs.git_user_name }}"
     - name: Install RTK
       shell: bash
       run: npm install -g rtk
