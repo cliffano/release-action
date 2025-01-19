@@ -1,5 +1,5 @@
 ---
-name: 'Studio Release GitHub Action'
+name: 'Studio RTK Release GitHub Action'
 description: |
   GitHub Action for creating a repository release using RTK.
 author: 'Cliffano Subagio'
@@ -38,10 +38,10 @@ runs:
       uses: actions/setup-node@v4
       with:
         node-version: '22'
-    - name: Set @pakkunbot's email as git user email
+    - name: Set git user email
       shell: bash
       run: git config --global user.email "${{ inputs.git_user_email }}"
-    - name: Set @pakkunbot's username as git user name
+    - name: Set git user name
       shell: bash
       run: git config --global user.name "${{ inputs.git_user_name }}"
     - name: Install RTK
