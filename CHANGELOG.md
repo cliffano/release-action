@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Changed
+- Upgrade RTK to 4.1.0
+- Upgrade node version to 24
+
 ## 1.1.0 - 2025-01-19
 ### Added
 - Add git_user_name and git_user_email input parameters

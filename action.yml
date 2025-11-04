@@ -30,14 +30,14 @@ runs:
   using: 'composite'
   steps:
     - name: Checkout code from the current repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         token: ${{ inputs.github_token }}
         set-safe-directory: ${{ github.workspace }}
     - name: Setup node.js, needed to run RTK
       uses: actions/setup-node@v4
       with:
-        node-version: '22'
+        node-version: '24'
     - name: Set git user email
       shell: bash
       run: git config --global user.email "${{ inputs.git_user_email }}"
@@ -46,12 +46,12 @@ runs:
       run: git config --global user.name "${{ inputs.git_user_name }}"
     - name: Install RTK
       shell: bash
-      run: npm install -g rtk@3.1.1
+      run: npm install -g rtk@4.1.0
     - name: Cut off a release
       shell: bash
       run: rtk release --release-increment-type ${{ inputs.release_type }}
     - name: Push the changes to remote repository
-      uses: ad-m/github-push-action@v0.8.0
+      uses: ad-m/github-push-action@v1.0.0
       with:
         tags: true
         github_token: ${{ inputs.github_token }}
