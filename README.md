@@ -1,6 +1,7 @@
 <img align="right" src="https://raw.github.com/cliffano/release-action/master/avatar.jpg" alt="Avatar"/>
 
 [![Build Status](https://github.com/cliffano/release-action/workflows/CI/badge.svg)](https://github.com/cliffano/release-action/actions?query=workflow%3ACI)
+[![Security Status](https://snyk.io/test/github/cliffano/release-action/badge.svg)](https://snyk.io/test/github/cliffano/release-action)
 <br/>
 
 Release GitHub Action
