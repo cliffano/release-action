@@ -46,7 +46,7 @@ runs:
       run: git config --global user.name "${{ inputs.git_user_name }}"
     - name: Install RTK
       shell: bash
-      run: npm install -g rtk@4.1.0
+      run: npm install -g rtk@4.2.0
     - name: Cut off a release
       shell: bash
       run: rtk release --release-increment-type ${{ inputs.release_type }}
