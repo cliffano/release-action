@@ -25,7 +25,7 @@ inputs:
     description: Git user email
     type: string
     required: false
-    default: blah+pakkun@cliffano.com
+    default: pakkunbot@users.noreply.github.com
 runs:
   using: 'composite'
   steps:

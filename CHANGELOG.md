@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Changed
+- Switch default email to pakkunbot's noreply email
+
 ## 1.3.0 - 2025-11-28
 ### Changed
 - Upgrade RTK to 4.2.0
