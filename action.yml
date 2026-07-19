@@ -59,7 +59,7 @@ runs:
       run: rtk release --release-increment-type ${{ inputs.release_type }}
     - name: Push the changes to remote repository
       if: ${{ inputs.push_changes == 'true' }}
-      uses: ad-m/github-push-action@v1.0.0
+      uses: ad-m/github-push-action@v1.3.0
       with:
         tags: true
         github_token: ${{ inputs.github_token }}
