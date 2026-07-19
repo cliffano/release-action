@@ -1,0 +1,7 @@
+x-post-update-dotfiles:
+    # Release Action does not follow generator template since CI run needs to use the latest main in order to pick up any issue with the action as soon as possible
+	git checkout .github/workflows/release-major-workflow.yaml
+    git checkout .github/workflows/release-minor-workflow.yaml
+    git checkout .github/workflows/release-patch-workflow.yaml
+
+.PHONY: x-post-update-dotfiles
