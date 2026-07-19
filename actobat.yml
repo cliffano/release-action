@@ -1,0 +1,15 @@
+---
+package_name: release-action
+author: Cliffano Subagio
+generator:
+  component: github-action
+  inputs:
+    project_id: release-action
+    project_name: Release GitHub Action
+    project_desc: GitHub Action for creating a repository release using RTK
+    author_name: Cliffano Subagio
+    author_email: cliffano@example.com
+    author_url: https://cliffano.com
+    github_id: cliffano
+    github_repo: release-action
+    github_token_prefix: STUDIO
