@@ -37,7 +37,7 @@ runs:
   using: 'composite'
   steps:
     - name: Checkout code from the current repository
-      uses: actions/checkout@v5
+      uses: actions/checkout@v7
       with:
         token: ${{ inputs.github_token }}
         set-safe-directory: ${{ github.workspace }}
