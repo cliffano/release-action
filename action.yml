@@ -2,7 +2,7 @@
 name: Studio RTK Release GitHub Action
 description: |
   GitHub Action for creating a repository release using RTK.
-version: 2.0.0
+version: 2.0.1-pre.0
 author: Cliffano Subagio
 branding:
   icon: bookmark
