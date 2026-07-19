@@ -1,0 +1,52 @@
+<pre><code> _       ____   _____   ___    ___    _   _           ____     ___     ____   ____  
+/ \     / ___| |_   _| |_ _|  / _ \  | \ | |         |  _ \   / _ \   / ___| / ___|
+</code></pre>
+<p>/ _ \   | |       | |    | |  | | | | |  \| |  <strong><em>_</em>  | | | | | | | | | |     _</strong> \ 
+  / ___ \  | |<strong><em>    | |    | |  | |</em>| | | |\  | |</strong><strong><em>| | |</em>| | | |_| | | |</strong><em>   ___) |
+ /</em>/   _\  _<strong><em>|   |</em>|   |</strong><em>|  ___/  |</em>| _|         |<strong><em>_/   _</em>_/   _</strong>_| |____/ </p>
+<h2>Description</h2>
+<p>GitHub Action for creating a repository release using RTK.</p>
+<h2>Inputs</h2>
+<p>| name | description | required | default |
+| --- | --- | --- | --- |
+| <code>release_type</code> | <p>RTK release type, options are 'major', 'minor', 'patch'</p> | <code>false</code> | <code>minor</code> |
+| <code>github_token</code> | <p>GitHub token</p> | <code>true</code> | <code>""</code> |
+| <code>git_user_name</code> | <p>Git user name</p> | <code>false</code> | <code>pakkunbot</code> |
+| <code>git_user_email</code> | <p>Git user email</p> | <code>false</code> | <code>pakkunbot@users.noreply.github.com</code> |
+| <code>push_changes</code> | <p>Whether to push release commit and tags to remote repository</p> | <code>false</code> | <code>true</code> |</p>
+<h2>Runs</h2>
+<p>This action is a <code>composite</code> action.</p>
+<h2>Usage</h2>
+<p>```yaml
+- uses: <strong><em>PROJECT</em></strong>@<strong><em>VERSION</em></strong>
+  with:
+    release_type:
+    # RTK release type, options are 'major', 'minor', 'patch'
+    #
+    # Required: false
+    # Default: minor</p>
+<pre><code>github_token:
+# GitHub token
+#
+# Required: true
+# Default: ""
+
+git_user_name:
+# Git user name
+#
+# Required: false
+# Default: pakkunbot
+
+git_user_email:
+# Git user email
+#
+# Required: false
+# Default: pakkunbot@users.noreply.github.com
+
+push_changes:
+# Whether to push release commit and tags to remote repository
+#
+# Required: false
+# Default: true
+</code></pre>
+<p>```</p>
