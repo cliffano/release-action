@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Upgrade actions/checkout to v7
 - Upgrade actions/setup-node to v7
 - Upgrade ad-m/github-push-action to v1.3.0
+- Upgrade node to 26
 
 ## 1.4.0 - 2026-03-14
 ### Changed
