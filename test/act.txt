@@ -1,4 +1,4 @@
-time="2026-07-19T05:25:26Z" level=info msg="Using docker host 'unix:///var/run/docker.sock', and daemon socket 'unix:///var/run/docker.sock'"
+time="2026-07-19T06:36:40Z" level=info msg="Using docker host 'unix:///var/run/docker.sock', and daemon socket 'unix:///var/run/docker.sock'"
 [Test Local Action Outside Standard GitHub Workflows Directory/test] ⭐ Run Set up job
 [Test Local Action Outside Standard GitHub Workflows Directory/test] 🚀  Start image=catthehacker/ubuntu:act-latest
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   🐳  docker pull image=catthehacker/ubuntu:act-latest platform= username= forcePull=true
@@ -8,11 +8,11 @@ time="2026-07-19T05:25:26Z" level=info msg="Using docker host 'unix:///var/run/d
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Set up job
 [Test Local Action Outside Standard GitHub Workflows Directory/test] ⭐ Run Main Checkout code
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   🐳  docker cp src=/opt/workspace/. dst=/opt/workspace
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Checkout code [30.950161ms]
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Checkout code [27.854406ms]
 [Test Local Action Outside Standard GitHub Workflows Directory/test] ⭐ Run Main Test Release Action
 [Test Local Action Outside Standard GitHub Workflows Directory/test] ⭐ Run Main Checkout code from the current repository
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   🐳  docker cp src=/opt/workspace/. dst=/opt/workspace
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Checkout code from the current repository [28.400688ms]
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Checkout code from the current repository [28.001758ms]
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   ☁  git clone 'https://github.com/actions/setup-node' # ref=v7
 [Test Local Action Outside Standard GitHub Workflows Directory/test] ⭐ Run Main Setup node.js, needed to run RTK
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   🐳  docker cp src=/root/.cache/act/actions-setup-node@v7/ dst=/var/run/act/actions/actions-setup-node@v7/
@@ -20,7 +20,7 @@ time="2026-07-19T05:25:26Z" level=info msg="Using docker host 'unix:///var/run/d
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   | Attempting to download 26...
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   | Acquiring 26.5.0 - x64 from https://github.com/actions/node-versions/releases/download/26.5.0-28944078721/node-26.5.0-linux-x64.tar.gz
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   | Extracting ...
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   | [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /tmp/0e71d4f9-059d-4f8b-a14e-c1ee74c2365e -f /tmp/3b2b26b4-f53e-468f-b8da-c3c368256c5d
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   | [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /tmp/6ba20117-a84d-4ab4-8b3e-1817eec244c4 -f /tmp/61d13dd0-1b31-4f08-b52a-5bedfd09ba09
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   | Adding to the cache ...
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   ❓  ::group::Environment details
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   | node: v26.5.0
@@ -30,15 +30,15 @@ time="2026-07-19T05:25:26Z" level=info msg="Using docker host 'unix:///var/run/d
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   ❓ add-matcher /run/act/actions/actions-setup-node@v7/.github/tsc.json
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   ❓ add-matcher /run/act/actions/actions-setup-node@v7/.github/eslint-stylish.json
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   ❓ add-matcher /run/act/actions/actions-setup-node@v7/.github/eslint-compact.json
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Setup node.js, needed to run RTK [5.262044082s]
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Setup node.js, needed to run RTK [4.832220636s]
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   ⚙  ::set-output:: node-version=v26.5.0
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   ⚙  ::add-path:: /opt/hostedtoolcache/node/26.5.0/x64/bin
 [Test Local Action Outside Standard GitHub Workflows Directory/test] ⭐ Run Main Set git user email
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   🐳  docker exec cmd=[bash --noprofile --norc -e -o pipefail /var/run/act/workflow/1-composite-2.sh] user= workdir=
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Set git user email [180.503367ms]
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Set git user email [89.313787ms]
 [Test Local Action Outside Standard GitHub Workflows Directory/test] ⭐ Run Main Set git user name
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   🐳  docker exec cmd=[bash --noprofile --norc -e -o pipefail /var/run/act/workflow/1-composite-3.sh] user= workdir=
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Set git user name [61.959871ms]
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Set git user name [62.834477ms]
 [Test Local Action Outside Standard GitHub Workflows Directory/test] ⭐ Run Main Install RTK
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   🐳  docker exec cmd=[bash --noprofile --norc -e -o pipefail /var/run/act/workflow/1-composite-4.sh] user= workdir=
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   | 
@@ -46,27 +46,27 @@ time="2026-07-19T05:25:26Z" level=info msg="Using docker host 'unix:///var/run/d
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   | 
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   | 10 packages are looking for funding
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   |   run `npm fund` for details
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Install RTK [4.33156237s]
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Install RTK [4.183794332s]
 [Test Local Action Outside Standard GitHub Workflows Directory/test] ⭐ Run Main Cut off a release
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   🐳  docker exec cmd=[bash --noprofile --norc -e -o pipefail /var/run/act/workflow/1-composite-5.sh] user= workdir=
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   | Executing pre step of rtk release scheme...
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   |   * Setting release version 1.5.0 on yaml resource located at action.yml
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   |   * Setting release version 1.5.0 on keep-a-changelog resource located at CHANGELOG.md
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   |   * Setting release version 2.1.0 on yaml resource located at action.yml
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   |   * Setting release version 2.1.0 on keep-a-changelog resource located at CHANGELOG.md
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   |   * Committing release version changes made to action.yml, CHANGELOG.md...
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   | Executing release step of rtk release scheme...
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   |   * Adding release version tag v1.5.0 ...
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   |   * Adding release version tag v2.1.0 ...
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   | Executing post step of rtk release scheme...
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   |   * Setting next pre-release version 1.5.1-pre.0 on yaml resource located at action.yml
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   |   * Setting next pre-release version 1.5.1-pre.0 on keep-a-changelog resource located at CHANGELOG.md
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   |   * Setting next pre-release version 2.1.1-pre.0 on yaml resource located at action.yml
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   |   * Setting next pre-release version 2.1.1-pre.0 on keep-a-changelog resource located at CHANGELOG.md
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   |   * Committing next pre-release version changes made to action.yml, CHANGELOG.md...
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Cut off a release [682.165516ms]
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Cut off a release [663.752072ms]
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   ☁  git clone 'https://github.com/ad-m/github-push-action' # ref=v1.3.0
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Test Release Action [48.49451469s]
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Main Test Release Action [48.291033265s]
 [Test Local Action Outside Standard GitHub Workflows Directory/test] ⭐ Run Post Test Release Action
 [Test Local Action Outside Standard GitHub Workflows Directory/test] ⭐ Run Post Setup node.js, needed to run RTK
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   🐳  docker exec cmd=[/opt/acttoolcache/node/24.18.0/x64/bin/node /var/run/act/actions/actions-setup-node@v7/dist/cache-save/index.js] user= workdir=
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Post Setup node.js, needed to run RTK [161.842641ms]
-[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Post Test Release Action [193.190483ms]
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Post Setup node.js, needed to run RTK [169.109905ms]
+[Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Post Test Release Action [202.635146ms]
 [Test Local Action Outside Standard GitHub Workflows Directory/test] ⭐ Run Complete job
 [Test Local Action Outside Standard GitHub Workflows Directory/test] Cleaning up container for job test
 [Test Local Action Outside Standard GitHub Workflows Directory/test]   ✅  Success - Complete job
