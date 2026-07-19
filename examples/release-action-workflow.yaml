@@ -1,0 +1,19 @@
+name: Example Workflow
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+      - name: Use Local Action
+        uses: ./
+        with:
+          release_type: 'minor'
+          push_changes: 'false'
+      - name: Use Remote Action
+        uses: cliffano/release-action@main
+        with:
+          release_type: 'minor'
+          push_changes: 'false'
