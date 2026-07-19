@@ -2,6 +2,8 @@
 name: 'Studio RTK Release GitHub Action'
 description: |
   GitHub Action for creating a repository release using RTK.
+# Custom version field
+version: 1.4.1-pre.0
 author: 'Cliffano Subagio'
 branding:
   icon: 'bookmark'
@@ -26,6 +28,11 @@ inputs:
     type: string
     required: false
     default: pakkunbot@users.noreply.github.com
+  push_changes:
+    description: Whether to push release commit and tags to remote repository
+    type: string
+    required: false
+    default: 'true'
 runs:
   using: 'composite'
   steps:
@@ -51,6 +58,7 @@ runs:
       shell: bash
       run: rtk release --release-increment-type ${{ inputs.release_type }}
     - name: Push the changes to remote repository
+      if: ${{ inputs.push_changes == 'true' }}
       uses: ad-m/github-push-action@v1.0.0
       with:
         tags: true
