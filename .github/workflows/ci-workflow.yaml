@@ -5,7 +5,15 @@ jobs:
   build:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
         with:
           set-safe-directory: ${{ github.workspace }}
-      - run: make ci
+      - uses: cliffano/command-docker-action@v1.4.0
+        with:
+          command: 'make deps ci'
+          image: cliffano/studio:3.2.0
+          shell: bash
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.STUDIO_GITHUB_TOKEN }}
+          publish_dir: docs
