@@ -42,7 +42,7 @@ runs:
         token: ${{ inputs.github_token }}
         set-safe-directory: ${{ github.workspace }}
     - name: Setup node.js, needed to run RTK
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v7
       with:
         node-version: '24'
     - name: Set git user email
