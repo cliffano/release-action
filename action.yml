@@ -1,19 +1,18 @@
 ---
-name: 'Studio RTK Release GitHub Action'
+name: Studio RTK Release GitHub Action
 description: |
   GitHub Action for creating a repository release using RTK.
-# Custom version field
-version: 1.4.1-pre.0
-author: 'Cliffano Subagio'
+version: 2.0.0
+author: Cliffano Subagio
 branding:
-  icon: 'bookmark'
-  color: 'black'
+  icon: bookmark
+  color: black
 inputs:
   release_type:
     description: RTK release type, options are 'major', 'minor', 'patch'
     type: string
     required: false
-    default: 'minor'
+    default: minor
   github_token:
     description: GitHub token
     type: string
@@ -34,7 +33,7 @@ inputs:
     required: false
     default: 'true'
 runs:
-  using: 'composite'
+  using: composite
   steps:
     - name: Checkout code from the current repository
       uses: actions/checkout@v7
