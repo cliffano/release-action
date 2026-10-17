@@ -1,2 +1,2 @@
-time="2026-10-17T01:40:47Z" level=info msg="Using docker host 'unix:///var/run/docker.sock', and daemon socket 'unix:///var/run/docker.sock'"
+time="2026-10-17T02:20:14Z" level=info msg="Using docker host 'unix:///var/run/docker.sock', and daemon socket 'unix:///var/run/docker.sock'"
 [Test Local Action Outside Standard GitHub Workflows Directory/test] 🚧  Skipping unsupported platform -- Try running with `-P ubuntu-24.04=...`
